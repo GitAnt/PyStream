@@ -1,67 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
-    <!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
     <title>Pystream by GitAnt</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
-    <header>
-      <div class="inner">
+    <div class="wrapper">
+      <header>
         <h1>Pystream</h1>
-        <h2>A simple streams player/manager written in PyGObject</h2>
-        <a href="https://github.com/GitAnt/PyStream" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
+        <p>A simple streams player/manager written in PyGObject</p>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-	    <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome!</h3>
-	  
-	  <p>This is a indicator for the Unity desktop interface. It's meant to
-	    allow the user to keep his favourite internet streams at hand. It's
-	    written using the PyGObject python module and the AppIndicator
-	    API.</p>
+        <p class="view"><a href="https://github.com/GitAnt/PyStream">View the Project on GitHub <small>GitAnt/PyStream</small></a></p>
 
-	  <p>It allows you to</p>
-	  <ul>
-	    <li> start a stream clicking on one of the labels in the "Streams" menu </li>
-	    <li>switch to a different streaming just by clicking on the corresponding menu entry</li>
-	    <li>stop the currently playing streaming.</li>
-	  </ul>
 
-	  <p>Some settings are available. They allow you to</p>
-	  <ul>
-	    <li>turn on/off the notifications coming from the indicator</li>
-	    <li>set the number of the streams that will be kept in the
-	    "Recently played" menu</li>
-	    <li>add new streams</li>
-	    <li>edit the command used to play existing streams</li>
-	    <li>export the streams labels and commands to a text file</li>
-	    <li>undo to changes going back to the default available streams.</li>
-	  </ul>
+        <ul>
+          <li><a href="https://github.com/GitAnt/PyStream/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/GitAnt/PyStream/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/GitAnt/PyStream">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>This is a indicator for the Unity desktop interface. It's meant to
+allow the user to keep his favourite internet streams at hand. It's
+written using the PyGObject python module and the AppIndicator API.</p>
 
-	  <p>In order to start the indicator execute the file
-	  'indicator-pyradio.py'.</p>
+<p>It allows to </p>
 
-	  <p>If you want to invoke the command via the dash you can
-	  add the indicator-pyradio.desktop file in
-	  ~/.local/share/applications/ with the following content:</p>
+<ul>
+<li>start a stream clicking on one of the labels in the "Streams" menu</li>
+<li>switch to a different streaming just by clicking on the
+corresponding menu entry</li>
+<li>stop the currently playing streaming.</li>
+</ul><p>Some settings are available. They allow you to</p>
 
-	  <pre><code>[Desktop Entry]
+<ul>
+<li>turn on/off the notifications coming from the indicator</li>
+<li>set the number of the streams that will be kept in the "Recently
+played" menu</li>
+<li>add new streams </li>
+<li>edit the command used to play existing streams</li>
+<li>export the streams labels and commands to a text file</li>
+<li>undo to changes going back to the default available streams.</li>
+</ul><p>In order to start the indicator execute the file
+'indicator-pyradio.py'.</p>
+
+<p>If you want to invoke the command via the dash you can add the
+indicator-pyradio.desktop file in ~/.local/share/applications/ with
+the following content:</p>
+
+<pre><code>[Desktop Entry]
 Version=0.1
 Name=indicator-pyradio
 Comment=My favourite streaming links
@@ -69,29 +64,19 @@ Exec=/path/to/the/indicator/folder/indicator-pyradio.py
 Icon=/path/to/the/indicator/folder/icons/pyradio.svg
 Terminal=false
 Type=Application
-Categories=Multimedia</code></pre>
+Categories=Multimedia
+</code></pre>
 
-	  <p>I've only tested it on my Ubuntu install, I'm on the 13.04</p>
-	  <p>Enjoy!</p>
-	</section>
-	
-        <aside id="sidebar">
-          <a href="https://github.com/GitAnt/PyStream/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/GitAnt/PyStream/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+<p>I've only tested it on my Ubuntu install, I'm on the 13.04</p>
 
-          <p class="repo-owner"><a href="https://github.com/GitAnt/PyStream"></a> is maintained by <a href="https://github.com/GitAnt">GitAnt</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+<p>Enjoy!</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/GitAnt">GitAnt</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-
+    <script src="javascripts/scale.fix.js"></script>
     
   </body>
 </html>
