@@ -73,8 +73,7 @@ Categories=Multimedia
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/GitAnt">GitAnt</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>
-                   (modified by <a href="https://github.com/GitAnt">GitAnt</a> )</small></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
