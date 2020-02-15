@@ -1,0 +1,12 @@
+Diesi
+vlc -Idummy http://diesi.live24.gr/diesi1013
+France Inter
+vlc -Idummy http://direct.franceinter.fr/live/franceinter-midfi.mp3
+Pepper FM
+vlc -Idummy http://pepper966.live24.gr/pepperorigin
+Radio Rai 1
+vlc -Idummy http://icestreaming.rai.it/1.mp3
+Radio Rai2
+vlc -Idummy http://icestreaming.rai.it/2.mp3
+Radio Rai3
+vlc -Idummy http://icestreaming.rai.it/3.mp3
