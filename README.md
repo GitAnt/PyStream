@@ -1,10 +1,15 @@
-This is a indicator for the Unity desktop interface. It's meant to
+# PyRadio
+
+![](images/pyradio_streams.png)
+![](images/pyradio_settings.png)
+
+This is a indicator for the Ubuntu desktop. It's meant to
 allow the user to keep his favourite internet streams at hand. It's
 written using the PyGObject python module and the AppIndicator API.
 
 It allows to 
 - start a stream clicking on one of the labels in the "Streams" menu
-- switch to a different streaming just by clicking on the
+- switch to a different stream by clicking on the
 corresponding menu entry
 - stop the currently playing streaming.
 
@@ -20,7 +25,7 @@ played" menu
 In order to start the indicator execute the file
 'indicator-pyradio.py'.
 
-If you want to invoke the command via the dash you can add the
+If you want the script to be available as an application you can add the
 indicator-pyradio.desktop file in ~/.local/share/applications/ with
 the following content:
 
@@ -36,6 +41,6 @@ Type=Application
 Categories=Multimedia
 ```
 
-I've only tested it on my Ubuntu install, I'm on the 13.04
+I've only tested it on my Ubuntu install, I'm on the 20.04
 
 Enjoy!

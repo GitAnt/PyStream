@@ -1,14 +1,30 @@
+BBC radio 1
+vlc -I dummy http://open.live.bbc.co.uk/mediaselector/5/select/version/2.0/mediaset/http-icy-mp3-a/vpid/bbc_radio_one/format/pls.pls
+BBC radio 2
+vlc -I dummy http://open.live.bbc.co.uk/mediaselector/5/select/version/2.0/mediaset/http-icy-mp3-a/vpid/bbc_radio_two/format/pls.pls
+BBC radio 3
+vlc -I dummy http://open.live.bbc.co.uk/mediaselector/5/select/version/2.0/mediaset/http-icy-mp3-a/vpid/bbc_radio_three/format/pls.pls
+BBC radio 4
+vlc -I dummy http://open.live.bbc.co.uk/mediaselector/5/select/version/2.0/mediaset/http-icy-mp3-a/vpid/bbc_radio_fourfm/format/pls.pls
 Diesi
 vlc -Idummy http://diesi.live24.gr/diesi1013
 France Inter
 vlc -Idummy http://direct.franceinter.fr/live/franceinter-midfi.mp3
+Kerrang
+vlc -I dummy http://www.radiofeeds.co.uk/bauer.pls?station=kerrang.mp3
 Pepper FM
 vlc -Idummy http://pepper966.live24.gr/pepperorigin
+Planet Rock
+vlc -I dummy http://www.radiofeeds.co.uk/bauer.pls?station=planetrock.mp3
 Radio Capital
 vlc -Idummy http://radiocapital-lh.akamaihd.net/i/RadioCapital_Live_1@196312/master.m3u8
+Radio Deejay
+vlc -I dummy http://radiodeejay-lh.akamaihd.net/i/RadioDeejay_Live_1@189857/master.m3u8
 Radio Rai 1
 vlc -Idummy http://icestreaming.rai.it/1.mp3
 Radio Rai2
 vlc -Idummy http://icestreaming.rai.it/2.mp3
 Radio Rai3
 vlc -Idummy http://icestreaming.rai.it/3.mp3
+Virgin Radio
+vlc -Idummy http://icecast.unitedradio.it/Virgin.mp3

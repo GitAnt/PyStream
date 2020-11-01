@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import gi
@@ -57,13 +57,13 @@ class PyRadio(callbacks, settings, settingsCallbacks, addStream):
         self.menu = Gtk.Menu()
 
         # Define a new menubar item "Streams"
-        self.streams_menu = Gtk.MenuItem("Streams")
+        self.streams_menu = Gtk.MenuItem(label="Streams")
         self.streams_menu.show()
         self.menu.append(self.streams_menu)
         self.reset_streams_submenu()
 
         # Define a new menubar item "Recent streams"
-        self.recent = Gtk.MenuItem("Recently played")
+        self.recent = Gtk.MenuItem(label="Recently played")
         self.recent.show()
         self.menu.append(self.recent)
         # Define a menu and some of its items and add it to the
@@ -77,7 +77,7 @@ class PyRadio(callbacks, settings, settingsCallbacks, addStream):
         for i in range(len(self.recent_streams)):
             self.recent_streams[i] = self.recent_streams[i].strip()
         for i in self.recent_streams:
-            stream_item = Gtk.MenuItem(i)
+            stream_item = Gtk.MenuItem(label=i)
             stream_item.connect("activate", self.start_playback, i)
             stream_item.show()
             self.recent_streams_menu_items.append(stream_item)
@@ -90,24 +90,24 @@ class PyRadio(callbacks, settings, settingsCallbacks, addStream):
         self.NotificationOn = bool(int(settings[1].strip()))
 
         # Define a main menu item to stop the streaming
-        self.stop = Gtk.MenuItem("Stop streaming")
+        self.stop = Gtk.MenuItem(label="Stop streaming")
         self.stop.connect("activate", self.stop_playback)
         self.stop.show()
         self.menu.append(self.stop)
 
         # Define a main menu item to display the currently playing stream
-        self.current = Gtk.MenuItem("No stream playing")
+        self.current = Gtk.MenuItem(label="No stream playing")
         self.current.show()
         self.menu.append(self.current)
 
         # Define a main menu item to stop the streaming
-        self.prefs = Gtk.MenuItem("Open settings...")
+        self.prefs = Gtk.MenuItem(label="Open settings...")
         self.prefs.connect("activate", self.openSettings)
         self.prefs.show()
         self.menu.append(self.prefs)
 
         # Define a main menu item to close the indicator
-        self.quit_item = Gtk.MenuItem("Quit")
+        self.quit_item = Gtk.MenuItem(label="Quit")
         self.quit_item.connect("activate", self.quit)
         self.quit_item.show()
         self.menu.append(self.quit_item)
